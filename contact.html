@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final contact page</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="contact">
+  <header>
+    <h1>
+      Contact page
+    </h1>
+  </header>
+
+  <main>
+    <section>
+      <figure>
+        <img src="./img/document.png" alt="comment">
+        <figcaption>
+          <a href="#">
+            Read our Policy
+          </a>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./img/cell-phone.png" alt="phone">
+        <figcaption>
+          Contact Support 
+          <a href="tel:+001-001-0011">Tel:001-001-0011</a>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./img/email1.png" alt="Contact">
+        <figcaption>
+          Contact form
+          <a href="mailto:+info@company.com">
+            info@company.com
+          </a>
+        </figcaption>
+      </figure>
+    </section>
+    <form method="post" action="#">
+      <fieldset>
+       <legend>Personal Information</legend>
+        <article>
+          <input type="text" name="fname" placeholder="first name">
+          <input type="text" name="lname" placeholder="last name">
+          
+          <select>
+            <option selected disabled>Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Prefer not to say</option>
+          </select>
+        </article>
+        <article>
+          <input type="email" name="emali" placeholder="emali">
+          
+          <select name="age">
+            <option selected disabled>Age</option>
+            <optgroup label="young">
+              <option> - 12</option>
+              <option>13 - 19</option>
+              <option>20 - 29</option>
+            </optgroup>
+            <optgroup label="adult">
+              <option>30 - 39</option>
+              <option>40 - 49</option>
+              <option>50 - 59</option>
+            </optgroup>
+             <optgroup label="senior">
+              <option>60 - 69</option>
+              <option>70+</option>
+             </optgroup>
+          </select>
+        </article>
+        <table>
+          <caption>
+            The type of your favorite movie
+          </caption>
+          <tr>
+            <td>
+              Action
+            </td>
+            <td>
+              Comedy
+            </td>
+            <td>
+              Fantasy
+            </td>
+            <td>
+              Horro
+            </td>
+            <td>
+              Romance
+            </td>
+            <td>
+              Drama
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="action"></td>
+            <td><input type="checkbox" name="comedy"></td>
+            <td><input type="checkbox" name="fantasy"></td>
+            <td><input type="checkbox" name="horro"></td>
+            <td><input type="checkbox" name="romance"></td>
+            <td><input type="checkbox" name="drama"></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Movie Info</legend>
+        <article>
+          <input type="date" name="showdate">
+          <input type="time" name="showtime">
+          <input type="text" name="mname" placeholder="Movie name">
+          <input type="number" name="total" placeholder="Total number of tickets">
+        </article>
+        <article>
+          <table>
+            <caption>
+              The rate of your satisfaction
+              (1 : bad --- 5 : remarkable)
+            </caption>
+            <tr>
+              <td>
+                1 
+              </td>
+              <td>
+                2 
+              </td>
+              <td>
+                3 
+              </td>
+              <td>
+                4 
+              </td>
+              <td>
+                5 
+              </td>
+            </tr>
+            <tr>
+              <td><input type="radio" name="rate"></td>
+              <td><input type="radio" name="rate"></td>
+              <td><input type="radio" name="rate"></td>
+              <td><input type="radio" name="rate"></td>
+              <td><input type="radio" name="rate"></td>
+            </tr>
+          </table>
+          <textarea name="comment" placeholder="Comments"></textarea>
+        </article>
+      </fieldset>
+      <article>
+        <input type="submit" value="Send">
+        <input type="reset" value="Clean">
+      </article>
+    </form>
+  </main>
+</body>
+</html>
